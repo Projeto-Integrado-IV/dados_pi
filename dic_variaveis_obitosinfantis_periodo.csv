@@ -1,0 +1,8 @@
+Variável;Tipo;Descrição;Fonte;Nota
+cod_ibge;numérico;Código oficial de 7 dígitos definido pelo IBGE para município;Instituto Brasileiro de Geografia e Estatística – IBGE ;
+ano;texto;Ano de ocorrência;Fundação Sistema Estadual de Análise de Dados – Seade;
+obitos_menores_1_ano;numérico;Óbitos de menores de 1 ano, por município de residência e data de ocorrência;Fundação Sistema Estadual de Análise de Dados – Seade;
+obitos_menores_de_7_dias;numérico;Óbitos ocorridos entre 0 a 6 dias, por município de residência e data de ocorrência (óbitos neonatal precoce);Fundação Sistema Estadual de Análise de Dados – Seade;
+obitos_de_28_dias_a_364_dias;numérico;Óbitos ocorrido enter 28 a 364 dias, por município de residência e data de ocorrência (óbitos pós-neonatal);Fundação Sistema Estadual de Análise de Dados – Seade;
+obitos_de_7_a_27_dias;numérico;Óbitos ocorridos entre 7 a 27 dias, por município de residência e data de ocorrência (óbitos neonatal tardio);Fundação Sistema Estadual de Análise de Dados – Seade;
+nascidos_vivos;numérico;Nascidos vivos por município de residência e data de ocorrência;Fundação Sistema Estadual de Análise de Dados – Seade;

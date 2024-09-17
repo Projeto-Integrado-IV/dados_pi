@@ -1,0 +1,8 @@
+Variável;Tipo;Descrição;Fonte;Nota
+cod_ibge;numérico;Código oficial de 7 dígitos definido pelo IBGE para município;Instituto Brasileiro de Geografia e Estatística – IBGE ;
+ano;texto;Ano de ocorrência;Fundação Sistema Estadual de Análise de Dados – Seade;
+nascidos_vivos;numérico;Nascidos vivos por município de residência e data de ocorrência;Fundação Sistema Estadual de Análise de Dados – Seade;
+perinatais;numérico;Óbitos menores de um ano, por município de residência e data de ocorrência, de um grupo de causas;Fundação Sistema Estadual de Análise de Dados – Seade;
+malformacao_congenita;numérico;Óbitos menores de um ano, por município de residência e data de ocorrência, de um grupo de causas;Fundação Sistema Estadual de Análise de Dados – Seade;
+doencas_ap_respiratorio;numérico;Óbitos menores de um ano, por município de residência e data de ocorrência, de um grupo de causas;Fundação Sistema Estadual de Análise de Dados – Seade;
+infecciosas_e_ parasitarias;numérico;Óbitos menores de um ano, por município de residência e data de ocorrência, de um grupo de causas;Fundação Sistema Estadual de Análise de Dados – Seade;
