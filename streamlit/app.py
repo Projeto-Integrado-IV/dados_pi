@@ -73,3 +73,6 @@ if not df_filtrado.empty:
     )
 
     st.plotly_chart(fig3)
+
+# quando não tiver informação do ano, deixa legenda informativa
+# Corrigir grafico de taxa de mortalidade infantil categoria baixa está errada (subir todas as linhas)
