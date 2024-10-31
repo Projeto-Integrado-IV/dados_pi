@@ -110,12 +110,9 @@ if not df_filtrado.empty:
     # Gráfico de nascimentos
     fig2 = px.line(df_filtrado, x='ano', y='nascidos vivos (por local de residência)', color='Cidade', title='Nascidos Vivos', labels={'ano': 'Ano', 'nascidos vivos (por local de residência)': 'Nascidos Vivos'}, line_shape='linear')
 
-    # Adicionar zonas de classificação (Alta, Média e Baixa)
-    max_tmi = df_filtrado['taxa_mortalidade_infantil'].max() if 'taxa_mortalidade_infantil' in df_filtrado.columns else 0
-    margem = 10
-    limite_alta = max_tmi + margem
 
-    fig3.add_shape(type="rect", x0=df_filtrado['ano'].min(), y0=50, x1=2030, y1=limite_alta, fillcolor="Red", opacity=0.2, layer="below", line_width=0, name="Alta (50 ou mais)")
+    # Adicionar zonas de classificação
+    fig3.add_shape(type="rect", x0=df_filtrado['ano'].min(), y0=50, x1=2030, y1=215, fillcolor="red", opacity=0.2, layer="below", line_width=0, name="Alta (50 ou mais)")
     fig3.add_shape(type="rect", x0=df_filtrado['ano'].min(), y0=20, x1=2030, y1=50, fillcolor="Orange", opacity=0.2, layer="below", line_width=0, name="Média (20-49)")
     fig3.add_shape(type="rect", x0=df_filtrado['ano'].min(), y0=0, x1=2030, y1=20, fillcolor="Green", opacity=0.2, layer="below", line_width=0, name="Baixa (menos de 20)")
 
@@ -137,3 +134,9 @@ if not df_filtrado.empty:
     st.subheader("Tabela de Dados de Mortalidade Infantil")
     st.dataframe(df_filtrado.style.set_caption("Dados Filtrados de Mortalidade Infantil").set_table_styles(
         [{'selector': 'th', 'props': [('max-width', '200px')]}]))
+
+
+
+st.markdown(
+    "Fonte dos dados: [Mortalidade Infantil - SEADE](https://repositorio.seade.gov.br/dataset/mortalidade-infantil)"
+)
